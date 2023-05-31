@@ -18,7 +18,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: MyFont;
+  font-family: var(--font-family);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,24 +85,23 @@ form {
 label {
   margin-bottom: 10px;
   color: black;
-  font-size: small;
+  font-size: var(--font-size);
 }
 input {
   padding: 10px 20px;
-  font-family: inherit;
+  font-family: var(--font-family);
   border-radius: 5px;
   outline: none;
   border: 1px solid hsl(231, 7%, 60%);
 }
 button {
-  font-family: inherit;
+  font-family: var(--font-family);
   margin-top: 20px;
   padding: 15px 20px;
   border: none;
   outline: none;
   color: white;
   border-radius: 5px;
-  cursor: pointer;
   background-color: hsl(235, 18%, 26%);
 }
 button:hover {
